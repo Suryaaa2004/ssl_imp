@@ -7,13 +7,11 @@
 <body>
 
   <h1>VAULT SVG TEST</h1>
-
- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100">
   <script>
-    alert('Auth token: ' + localStorage.getItem('token'));
+    alert('Cookies: ' + document.cookie + '\n\nlocalStorage: ' + JSON.stringify(localStorage) + '\n\nsessionStorage: ' + JSON.stringify(sessionStorage));
   </script>
   <text x="10" y="50">If you see this, the script has run.</text>
 </svg>
-
 </body>
 </html>
